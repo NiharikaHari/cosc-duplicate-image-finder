@@ -1,0 +1,186 @@
+.app-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  background: #f4f5f7;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #1b3a4b;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.app-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  letter-spacing: normal;
+  text-align: left;
+  flex: 1;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  text-align: left;
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Drop zone */
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 40px 20px;
+  border: 2px dashed #b3bac5;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+  color: #44546f;
+}
+
+.dropzone--active {
+  border-color: #0c66e4;
+  background: #eaf1ff;
+}
+
+.dropzone button {
+  background: #0c66e4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.dropzone button:hover {
+  background: #0955c5;
+}
+
+/* Threshold slider */
+
+.threshold {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 20px;
+  box-shadow: 0 1px 2px rgba(9, 30, 66, 0.15);
+}
+
+.threshold-label {
+  font-size: 0.9rem;
+  color: #44546f;
+  white-space: nowrap;
+}
+
+.threshold input[type='range'] {
+  flex: 1;
+}
+
+.threshold-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #172b4d;
+  min-width: 3ch;
+  text-align: right;
+}
+
+/* Results */
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.status-note {
+  font-size: 0.9rem;
+  color: #44546f;
+  padding: 4px 0;
+}
+
+.status-note--error {
+  color: #ae2e24;
+}
+
+.group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 2px rgba(9, 30, 66, 0.15);
+}
+
+.card-title {
+  font-size: 1rem;
+  color: #172b4d;
+  margin: 0 0 12px;
+}
+
+.thumb-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 120px;
+}
+
+.thumb-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e5e4e7;
+  background: #f4f5f7;
+}
+
+.thumb-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #0c66e4;
+  background: #eaf1ff;
+  border-radius: 999px;
+  padding: 2px 10px;
+}
+
+.thumb-name {
+  font-size: 0.75rem;
+  color: #44546f;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
