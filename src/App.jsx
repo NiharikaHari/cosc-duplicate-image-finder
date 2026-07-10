@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import Header from './components/Header.jsx'
+import Hero from './components/Hero.jsx'
 import DropZone from './components/DropZone.jsx'
 import ThresholdSlider from './components/ThresholdSlider.jsx'
 import ResultsPanel from './components/ResultsPanel.jsx'
@@ -63,16 +65,16 @@ export default function App() {
 
   return (
     <div className="app-page">
-      <header className="topbar">
-        <span className="app-icon">🔍</span>
-        <h1 className="app-title">Duplicate Image Finder</h1>
-      </header>
+      <Header />
       <main className="app-main">
-        <DropZone onFilesSelected={handleFilesSelected} />
-        {readyItems.length > 1 && (
-          <ThresholdSlider value={threshold} onChange={setThreshold} />
-        )}
-        <ResultsPanel allItems={items} items={readyItems} groups={groups} />
+        <Hero />
+        <div className="tool-panel">
+          <DropZone onFilesSelected={handleFilesSelected} />
+          {readyItems.length > 1 && (
+            <ThresholdSlider value={threshold} onChange={setThreshold} />
+          )}
+          <ResultsPanel allItems={items} items={readyItems} groups={groups} />
+        </div>
       </main>
     </div>
   )

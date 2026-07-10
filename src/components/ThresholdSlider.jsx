@@ -7,7 +7,7 @@ export default function ThresholdSlider({ value, onChange }) {
       <input
         id="threshold-range"
         type="range"
-        min="50"
+        min="60"
         max="100"
         value={value}
         onChange={(event) => onChange(Number(event.target.value))}
